@@ -1,13 +1,65 @@
-#main {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+#container {
+  width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-input {
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#user-results,
+#repo-results {
+  margin-top: 20px;
+}
+
+.user-card {
+  display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-#github-container {
-  display: flex;
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-ul {
-  list-style: none;
+.repo-card {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
